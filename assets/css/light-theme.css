@@ -4197,20 +4197,17 @@ span.plus {
     .pricing-card ul li {
       list-style-type: none;
       display: block;
-      padding: 15px 7px 15px 7px;
+      padding: 15px 10px 15px 10px;
       font-size: 14px;
-      width: 200px;
+      width: auto;
       white-space: nowrap;
       text-overflow: ellipsis;
       overflow: hidden;
       text-align: center;
       margin: 0 auto; }
-      @media only screen and (max-width: 1200px) {
+      @media only screen and (min-width: 1600px) {
         .pricing-card ul li {
-          width: 300px; } }
-      @media only screen and (max-width: 480px) {
-        .pricing-card ul li {
-          width: 220px; } }
+          width: auto; } }
   .pricing-card .buy-button-box {
     position: absolute;
     bottom: -10px; }

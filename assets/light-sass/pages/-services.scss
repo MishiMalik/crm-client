@@ -194,20 +194,23 @@
     li {
       list-style-type: none;
       display: block;
-      padding: 15px 7px 15px 7px;
+      padding: 15px 10px 15px 10px;
       font-size: 14px;
-      width: 200px;
+      width:auto;
       white-space: nowrap;
       text-overflow: ellipsis;
       overflow: hidden;
       text-align: center;
       margin: 0 auto;
-      @media only screen and (max-width:1200px){
-        width: 300px;
+      @media only screen and (min-width:1600px){
+        width: auto;
       }
-      @media only screen and (max-width:480px){
-        width: 220px;
-      }
+    //   @media only screen and (max-width:1200px){
+    //     width: 300px;
+    //   }
+    //   @media only screen and (max-width:480px){
+    //     width: 220px;
+    //   }
     //   border-bottom: 1px solid #f2f2f2;
     }
   }
