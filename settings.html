@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="48x48" href="assets/images/favi.ico">
+    <!-- Bootstrap5 -->
+    <link rel="stylesheet" href="assets/bootstrap5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/chart.js/dist/Chart.min.css">
+
+    <!-- icons -->
+    <link rel="stylesheet" href="assets/icons/icons/all.css">
+    <link rel="stylesheet" href="assets/icons/icons/sharp-solid.css">
+    <link rel="stylesheet" href="assets/icons/icons/sharp-regular.css">
+    <link rel="stylesheet" href="assets/icons/icons/sharp-light.css">
+      <!-- table -->
+      <link rel="stylesheet" href="https://unpkg.com/css-pro-layout@1.1.0/dist/css/css-pro-layout.css">
+      <link rel="stylesheet" href="https://cdn.datatables.net/v/dt/dt-1.13.6/datatables.min.css">
+      <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.dataTables.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="https://unpkg.com/css-pro-layout@1.1.0/dist/css/css-pro-layout.css">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" id="theme-link" href="assets/css/light-theme.css">
+
+
+    <title>DigiSplix</title>
+</head>
+
+<body class="theme">
+
+    <div class="layout has-sidebar fixed-sidebar d-flex" style="width: fit-content !important;">
+         <!-- ---------------------Side bar-------------- -->
+         <aside id="sidebar" class="sidebar break-point-lg has-bg-image ">
+
+            <div class="sidebar-layout">
+                <div class="sidebar-header d-flex justify-content-center">
+
+                    <a id="btn-toggle2" href="#" class="sidebar-toggler break-point-lg">
+                    </a>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <img src="assets/images/DigiSplix-Logo-for-Light-Mode.png" alt="" class="img-fluid logo-lg"
+                            id="logo-image">
+                        <img src="assets/images/d-png.png" alt="" class="img-fluid logo-sm">
+                    </div>
+                </div>
+                <div class="d-flex  user-account ">
+
+                    <div class="user-icon">
+                        <img src="assets/images/vatar-removebg-preview.png" alt="" class="" height="50" width="50">
+                    </div>
+                    <div class="dropdown profile-dropdown ms-auto">
+                        <button class="dropdown-toggle d-flex align-items-center pe-3" type="button"
+                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <div>
+                                <h3 class="mb-0">Nil Yeager </h3>
+                                <p class="mb-0 pb-0">Super Admin</p>
+                            </div>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+
+                            <li><a class="dropdown-item" href="profile.html"><i
+                                        class="bi bi-person me-3"></i>Profile</a>
+                            </li>
+                            <li><a class="dropdown-item" href="settings.html"><i
+                                        class="bi bi-gear me-3"></i>Settings</a>
+                            <li><a class="dropdown-item" href="log-in.html"><i
+                                        class="bi bi-arrow-bar-left me-3"></i>Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="menu-item py-3 menu-heading-div">
+                    <span class="ps-4 f-14 w-500 text-light-white ls-3 menu-heading ">Main Menu</span>
+                </div>
+                <div class="sidebar-content">
+                    <nav class="menu open-current-submenu">
+
+                        <ul>
+                            <li class="menu-item">
+                                <a href="index.html" class="active-menu">
+                                    <span class="menu-icon">
+                                        <i class="fa-duotone fa-grid-2"></i>
+                                    </span>
+                                    <span class="menu-title">Dashboard </span>
+                                </a>
+                            </li>
+
+                            <li class="menu-item">
+                                <a href="chats.html">
+                                    <span class="menu-icon">
+                                        <i class="fa-duotone fa-messages"></i>
+
+                                    </span>
+                                    <span class="menu-title">Chat
+                                    </span>
+                                </a>
+                            </li>
+
+                            <li class="menu-item">
+                                <a href="services.html">
+                                    <span class="menu-icon">
+                                        <i class="fa-duotone fa-chart-line-up"></i>
+                                    </span>
+                                    <span class="menu-title">Business Growth
+                                    </span>
+                                </a>
+                            </li>
+
+                            <li class="menu-item">
+                                <a href="billing.html">
+                                    <span class="menu-icon">
+                                        <i class="fa-duotone fa-credit-card"></i>
+                                    </span>
+                                    <span class="menu-title">Billing
+                                    </span>
+                                </a>
+                            </li>
+
+                            <li class="menu-item">
+                                <a href="support.html">
+                                    <span class="menu-icon">
+                                        <i class="fa-duotone fa-user-headset"></i>
+
+                                    </span>
+                                    <span class="menu-title">Support
+                                    </span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <div class="main-area w-100 mb-0">
+        <!-- ----------------Header--------------- -->
+        <header class="header-div  w-100">
+            <div class="header w-100">
+                <a id="btn-collapse" href="#" class="align-self-center header-option">
+                    <i class="fa-duotone fa-bars-staggered header-icon"></i>
+
+                </a>
+                <a id="btn-toggle" href="#" class="align-self-center header-option">
+                    <i class="fa-duotone fa-bars-staggered header-icon"></i>
+                </a>
+                <div class="show-md align-self-center">
+                    <img src="assets/images/DigiSplix-Logo-for-Light-Mode.png" alt="" class="img-fluid mobile-logo"
+                        id="logo-image-sm">
+                </div>
+
+                <!-- Notification -->
+                <div class="ms-auto d-flex">
+                    <div class="notification-dropdown-div  align-self-center header-option">
+                        <button type="button" style="position: relative;">
+                            <div class="notifications ">
+                                <i class="fa-duotone fa-bell header-icon mt-1"></i>
+
+                                <div class="pulse-wave"></div>
+                            </div>
+                        </button>
+                        <div class="notification-dropdown-inner">
+                            <ul class="notification-dropdown">
+                                <div class="notifications-header">
+                                    <h1 class="mb-0 pb-0">Notifications</h1>
+                                    <button>Clear All</button>
+                                </div>
+                                <li><a class=" " href="notifications.html"><i
+                                            class="bi bi-people-fill text-primary f-14 me-2"></i>
+                                        <p class="mb-0 pb-0 ">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                            elit. Unde, a!</p>
+                                    </a>
+                                </li>
+                                <li><a class=" " href="#"><i class="bi bi-info-circle  text-yellow f-14 me-2"></i>
+                                        <p class="mb-0 pb-0 text-start">Lorem ipsum dolor, sit amet consectetur
+                                            adipisicing
+                                            elit. Unde, a!</p>
+                                    </a>
+                                </li>
+                                <li><a class=" " href="#"><i
+                                            class="bi bi-person-fill text-primary  text-danger f-14 me-2"></i>
+                                        <p class="mb-0 pb-0 text-start">Lorem ipsum dolor, sit amet consectetur
+                                            adipisicing
+                                            elit. Unde, a!</p>
+                                    </a>
+                                </li>
+                                <li><a class=" " href="#"> <i class="bi bi-chat-fill  text-yellow f-14 me-2"></i>
+                                        <p class="mb-0 pb-0 text-start">Lorem ipsum dolor, sit amet consectetur
+                                            adipisicing
+                                            elit. Unde, a!</p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="notifications.html" class="text-center">
+                                        <div class="see-all w-100 text-center">
+                                            View All
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Quick links -->
+                    <div class="header-option align-self-center hide-sm side-menu-quick-btn">
+                        <i class="fa-duotone fa-grid-round-2 header-icon"></i>
+
+                    </div>
+
+                    <!-- ticker -->
+                    <div class="header-option align-self-center hide-sm side-menu-ticket-btn">
+                        <!-- <i class="bi bi-app-indicator path-1"></i> -->
+                        <i class="fa-duotone fa-life-ring header-icon"></i>
+                    </div>
+
+                    <!-- chat -->
+                    <div class="header-option align-self-center hide-sm chat-btn">
+                        <i class="fa-duotone fa-messages header-icon"></i>
+
+                    </div>
+
+                    <!-- theme exchange -->
+                    <div class="header-option align-self-center" id="toggleTheme">
+                        <i class="fa-duotone fa-brightness header-icon"></i>
+
+                    </div>
+
+                    <!-- fullscreen -->
+                    <div class="header-option align-self-center me-0 hide-sm" id="fullscreen-button">
+
+                        <i class="fa-duotone fa-arrows-maximize header-icon"></i>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- quick links menu -->
+      <div class="side-menu side-menu-quick" id="side-menu-quick">
+            <div class="quick-links">
+                <div class="row">
+                    <div class="col-lg-12 mb-4 pb-3 side-menu-header">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h1 class="mb-0 pb-0 ">Quick Actions</h1>
+                            <button class="close-btn">
+                                <i class="fa-duotone fa-xmark-large"></i>
+
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-6 pe-1 mb-2">
+                        <a href="projects.html">
+                            <div class="actions-card">
+                                <i class="fa-duotone fa-rectangle-history"></i>
+                                <p class="mb-0 pb-0">
+                                    Projects
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 ps-1 mb-2">
+                        <a href="clients.html">
+                            <div class="actions-card">
+                                <i class="fa-duotone fa-users-line"></i>
+                                <p class="mb-0 pb-0">
+                                    clients
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 pe-1 mb-2">
+                        <a href="partners.html">
+                            <div class="actions-card">
+                                <i class="fa-duotone fa-user-group-simple"></i>
+                                <p class="mb-0 pb-0">
+                                    Partners
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 ps-1 mb-2">
+                        <a href="staff.html">
+                            <div class="actions-card">
+                                <i class="fa-duotone fa-user-tie"></i>
+                                <p class="mb-0 pb-0">
+                                    Staff
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 pe-1 mb-2">
+                        <a href="leads.html">
+                            <div class="actions-card">
+                                <i class="fa-duotone fa-people-simple"></i>
+                                <p class="mb-0 pb-0">
+                                    Leads
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 ps-1 mb-2">
+                        <a href="settings.html">
+                            <div class="actions-card">
+                                <i class="fa-duotone fa-gear-complex-code"></i>
+                                <p class="mb-0 pb-0">
+                                    Settings
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <!-- ticket menu -->
+        <div class="side-menu side-menu-ticket">
+            <div class="ticket-links">
+                <div class="row">
+                    <div class="col-lg-12 mb-4 pb-3 side-menu-header">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h1 class="mb-0 pb-0">Ticket/support </h1>
+                            <button class="close-btn">
+                                <i class="fa-duotone fa-xmark-large"></i>
+
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 pe-1 mb-2">
+                        <a class="ticket-notify px-0 " href="#">
+                            <h4 class=" text-gray ">03:10</h4>
+                            <div class="ticket-body ticket-alert">
+                                <p class="mb-2">Morbi quis ex eu arcu auctor sagittis.</p>
+                                <span class="text-fade">by Johne</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-12 pe-1 mb-2">
+                        <a class="ticket-notify px-0 " href="#">
+                            <h4 class=" text-gray ">10:10</h4>
+                            <div class="ticket-body ticket-warning">
+                                <p class="mb-2">Morbi quis ex eu arcu auctor sagittis.</p>
+                                <span class="text-fade">by Johne</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-12 pe-1 mb-2">
+                        <a class="ticket-notify px-0 " href="#">
+                            <h4 class=" text-gray ">01:10</h4>
+                            <div class="ticket-body ticket-info">
+                                <p class="mb-2">Morbi quis ex eu arcu auctor sagittis.</p>
+                                <span class="text-fade">by Johne</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-12 pe-1 mb-2">
+                        <a class="ticket-notify px-0 " href="#">
+                            <h4 class=" text-gray ">12:10</h4>
+                            <div class="ticket-body ticket-success">
+                                <p class="mb-2">Morbi quis ex eu arcu auctor sagittis.</p>
+                                <span class="text-fade">by Johne</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-12 pe-1 mb-2">
+                        <a class="ticket-notify px-0 " href="#">
+                            <h4 class=" text-gray ">03:10</h4>
+                            <div class="ticket-body ticket-alert">
+                                <p class="mb-2">Morbi quis ex eu arcu auctor sagittis.</p>
+                                <span class="text-fade">by Johne</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-12 pe-1 mb-2">
+                        <a class="ticket-notify px-0 " href="#">
+                            <h4 class=" text-gray ">10:10</h4>
+                            <div class="ticket-body ticket-warning">
+                                <p class="mb-2">Morbi quis ex eu arcu auctor sagittis.</p>
+                                <span class="text-fade">by Johne</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-12 pe-1 mb-2">
+                        <a class="ticket-notify px-0 " href="#">
+                            <h4 class=" text-gray ">01:10</h4>
+                            <div class="ticket-body ticket-info">
+                                <p class="mb-2">Morbi quis ex eu arcu auctor sagittis.</p>
+                                <span class="text-fade">by Johne</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-12 pe-1 mb-2">
+                        <a class="ticket-notify px-0 " href="#">
+                            <h4 class=" text-gray ">12:10</h4>
+                            <div class="ticket-body ticket-success">
+                                <p class="mb-2">Morbi quis ex eu arcu auctor sagittis.</p>
+                                <span class="text-fade">by Johne</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-12 pe-1 mb-2">
+                        <a class="ticket-notify px-0 " href="#">
+                            <h4 class=" text-gray ">03:10</h4>
+                            <div class="ticket-body ticket-alert">
+                                <p class="mb-2">Morbi quis ex eu arcu auctor sagittis.</p>
+                                <span class="text-fade">by Johne</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-12 pe-1 mb-2">
+                        <a class="ticket-notify px-0 " href="#">
+                            <h4 class=" text-gray ">10:10</h4>
+                            <div class="ticket-body ticket-warning">
+                                <p class="mb-2">Morbi quis ex eu arcu auctor sagittis.</p>
+                                <span class="text-fade">by Johne</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-12 pe-1 mb-2">
+                        <a class="ticket-notify px-0 " href="#">
+                            <h4 class=" text-gray ">01:10</h4>
+                            <div class="ticket-body ticket-info">
+                                <p class="mb-2">Morbi quis ex eu arcu auctor sagittis.</p>
+                                <span class="text-fade">by Johne</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-12 pe-1 mb-2">
+                        <a class="ticket-notify px-0 " href="#">
+                            <h4 class=" text-gray ">12:10</h4>
+                            <div class="ticket-body ticket-success">
+                                <p class="mb-2">Morbi quis ex eu arcu auctor sagittis.</p>
+                                <span class="text-fade">by Johne</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-12 pe-1 mb-2">
+                        <a class="ticket-notify px-0 " href="#">
+                            <h4 class=" text-gray ">03:10</h4>
+                            <div class="ticket-body ticket-alert">
+                                <p class="mb-2">Morbi quis ex eu arcu auctor sagittis.</p>
+                                <span class="text-fade">by Johne</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-12 pe-1 mb-2">
+                        <a class="ticket-notify px-0 " href="#">
+                            <h4 class=" text-gray ">10:10</h4>
+                            <div class="ticket-body ticket-warning">
+                                <p class="mb-2">Morbi quis ex eu arcu auctor sagittis.</p>
+                                <span class="text-fade">by Johne</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-12 pe-1 mb-2">
+                        <a class="ticket-notify px-0 " href="#">
+                            <h4 class=" text-gray ">01:10</h4>
+                            <div class="ticket-body ticket-info">
+                                <p class="mb-2">Morbi quis ex eu arcu auctor sagittis.</p>
+                                <span class="text-fade">by Johne</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-12 pe-1 mb-2">
+                        <a class="ticket-notify px-0 " href="#">
+                            <h4 class=" text-gray ">12:10</h4>
+                            <div class="ticket-body ticket-success">
+                                <p class="mb-2">Morbi quis ex eu arcu auctor sagittis.</p>
+                                <span class="text-fade">by Johne</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- chat -->
+        <div class="chat__popup">
+            <div class="chat-header d-flex align-items-center">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <div class="d-flex align-items-center">
+                        <div class="image-div">
+                            <img src="assets/images/vatar.png" alt="" class="me-2">
+                        </div>
+                        <div>
+                            <h2>Jhon Doe</h2>
+                            <p class="status mb-0 pb-0">Active</p>
+                        </div>
+                    </div>
+                    <button class="close-chat ms-auto">
+                        <i class="fa-duotone fa-xmark-large"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="body">
+                <!-- recieve -->
+                <div class="recieve">
+                    <div class="d-flex align-items-center">
+                        <div class="image-div">
+                            <img src="assets/images/vatar.png" alt="" class="me-2">
+                        </div>
+                        <div>
+                            <h2>10:20 pm</h2>
+                            <p class="status mb-0 pb-0">Active</p>
+                        </div>
+                    </div>
+                    <div class="recieved-msg">
+                        <p class="mb-0 pb-0">Hi there, I'm Jesse and you?</p>
+                    </div>
+                </div>
+                <!-- send -->
+                <div class="send">
+                    <div class="d-flex align-items-center justify-content-end">
+                        <div class="text-end">
+                            <h2>Jhon Doe</h2>
+                            <p class="status mb-0 pb-0">02:23 am</p>
+                        </div>
+                        <div class="image-div">
+                            <img src="assets/images/vatar.png" alt="" class="me-2">
+                        </div>
+                    </div>
+                    <div class="send-msg ms-auto">
+                        <p class="mb-0 pb-0">Hi there, I'm Jesse and you?</p>
+                    </div>
+                    <div class="send-msg ms-auto">
+                        <p class="mb-0 pb-0">Are You ther?</p>
+                    </div>
+                </div>
+                <!-- recieve -->
+                <div class="recieve">
+                    <div class="d-flex align-items-center">
+                        <div class="image-div">
+                            <img src="assets/images/vatar.png" alt="" class="me-2">
+                        </div>
+                        <div>
+                            <h2>10:20 pm</h2>
+                            <p class="status mb-0 pb-0">Active</p>
+                        </div>
+                    </div>
+                    <div class="recieved-msg">
+                        <p class="mb-0 pb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt porro
+                            delectus quasi dolorem cum sequi.</p>
+                    </div>
+                    <div class="recieved-msg">
+                        <p class="mb-0 pb-0">Lorem ipsum dolor sit.</p>
+                    </div>
+                </div>
+                <!-- recieve -->
+                <div class="recieve">
+                    <div class="d-flex align-items-center">
+                        <div class="image-div">
+                            <img src="assets/images/vatar.png" alt="" class="me-2">
+                        </div>
+                        <div>
+                            <h2>10:20 pm</h2>
+                            <p class="status mb-0 pb-0">Active</p>
+                        </div>
+                    </div>
+                    <div class="recieved-msg">
+                        <p class="mb-0 pb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt porro
+                            delectus quasi dolorem cum sequi.</p>
+                    </div>
+                    <div class="recieved-msg">
+                        <p class="mb-0 pb-0">Lorem ipsum dolor sit.</p>
+                    </div>
+                </div>
+                <!-- send -->
+                <div class="send">
+                    <div class="d-flex align-items-center justify-content-end">
+                        <div class="text-end">
+                            <h2>Jhon Doe</h2>
+                            <p class="status mb-0 pb-0">02:23 am</p>
+                        </div>
+                        <div class="image-div">
+                            <img src="assets/images/vatar.png" alt="" class="me-2">
+                        </div>
+                    </div>
+                    <div class="send-msg ms-auto">
+                        <p class="mb-0 pb-0">Hi there, I'm Jesse and you?</p>
+                    </div>
+                    <div class="send-msg ms-auto">
+                        <p class="mb-0 pb-0">Are You ther?</p>
+                    </div>
+                </div>
+                <!-- recieve -->
+                <div class="recieve">
+                    <div class="d-flex align-items-center">
+                        <div class="image-div">
+                            <img src="assets/images/vatar.png" alt="" class="me-2">
+                        </div>
+                        <div>
+                            <h2>10:20 pm</h2>
+                            <p class="status mb-0 pb-0">Active</p>
+                        </div>
+                    </div>
+                    <div class="recieved-msg">
+                        <p class="mb-0 pb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt porro
+                            delectus quasi dolorem cum sequi.</p>
+                    </div>
+                    <div class="recieved-msg">
+                        <p class="mb-0 pb-0">Lorem ipsum dolor sit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="type-area">
+                <input type="text" placeholder="Type Here...">
+                <i class="fa-solid fa-paper-plane-top "></i>
+            </div>
+        </div>
+        <!-- -----------Main Contents----------- -->
+        <main class="content ">
+            <div class="container-fluid px-lg-0">
+                <div class="row justify-content-center">
+
+                    <div class="col-lg-12 h-100">
+                        <div class="box mb-3 box-p">
+                            <div class="flex-grow-1">
+                                <div class="d-flex align-items-center justify-content-between mb-3">
+                                    <h1 class="f-20 w-500 mb-0 pb-0 text-dark-clr">Settings</h1>
+                                </div>
+
+
+                                <div class="tab">
+                                    <button class="tablink tablink-profile" data-tab="Tab1" id="defaultOpen">Reset Password</button>
+                                    <button class="tablink tablink-profile" data-tab="Tab2">Verify Email</button>
+                                    <button class="tablink tablink-profile" data-tab="Tab3">Verify Phone</button>
+                                </div>
+
+                                <div id="Tab1" class="tabcontent-lead" style="min-height: 50vh;">
+                                    <form action="">
+                                        <div class="">
+                                            <div class="row">
+
+                                                <div class="col-lg-12">
+                                                    <div class="form-floating mb-3">
+                                                        <input type="text" class="form-control crm-input" id="old-pass"
+                                                            placeholder="Mickel">
+                                                        <label class="crm-label form-label" for="old-pass">Old
+                                                            Password<span class="text-danger"></span></label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <div class="form-floating mb-3">
+                                                        <input type="text" class="form-control crm-input"
+                                                            id="new-password" placeholder="ABC">
+                                                        <label class="crm-label form-label" for="new-password">New
+                                                            Password<span class="text-danger"></span></label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <div class="form-floating mb-3">
+                                                        <input type="text" class="form-control crm-input"
+                                                            id="confirm-password" placeholder="Mickel">
+                                                        <label class="crm-label form-label"
+                                                            for="confirm-password">Confirm Password<span
+                                                                class="text-danger"></span></label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <div
+                                                        class="d-flex justify-content-lg-end justify-content-center mt-3 mb-3">
+                                                        <!-- <button type="button" class="modal-btn-cancel me-3"
+                                                            data-bs-dismiss="modal">Cancel</button> -->
+                                                        <button type="button" class="modal-btn-save ">Save </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div id="Tab2" class="tabcontent-lead" style="min-height: 50vh;">
+
+                                    <div class="">
+                                        <div class="row">
+                                            <div class="col-lg-5 mx-auto">
+                                                <div class="verification-div mx-auto">
+                                                    <div class="verification-div--header">
+                                                        <h1>Email Verification</h1>
+                                                    </div>
+                                                    <div class="verification-div-body">
+                                                        <form action="" id="" class="multistep-form">
+
+
+                                                            <div class="tab-step">
+                                                                <p class="mb-0 pb-0">Enter email to get verification
+                                                                    code
+                                                                </p>
+                                                                <div class="col-lg-12 mt-3">
+                                                                    <div class="form-floating mb-3">
+                                                                        <input type="text"
+                                                                            class="form-control crm-input" id="old-pass"
+                                                                            placeholder="Mickel">
+                                                                        <label class="crm-label form-label"
+                                                                            for="old-pass">Enter Email<span
+                                                                                class="text-danger"></span></label>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                            <div class="tab-step">
+                                                                <p class="mb-0 pb-0">Enter Code send to your email
+                                                                </p>
+                                                                <div class="d-flex justify-content-center mt-4">
+                                                                    <input type="text" maxlength="1" class="code-input">
+                                                                    <input type="text" maxlength="1" class="code-input">
+                                                                    <input type="text" maxlength="1" class="code-input">
+                                                                    <input type="text" maxlength="1" class="code-input">
+                                                                </div>
+                                                               <div class="d-flex justify-content-center">
+                                                                <button class="bg-transparent border-0 mt-4 pt-2 f-14 text-primary text-center">Resend</button>
+                                                               </div>
+                                                            </div>
+                                                            <div class="tab-step">
+                                                                <div
+                                                                    class="d-flex justify-content-center align-items-center flex-column congratulations">
+
+                                                                    <img src="assets/images/happy.svg" alt="">
+                                                                    <h2>Congratulations!</h2>
+                                                                    <p class="mb-0 pb-0">
+                                                                        Your Email has been Verified.
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+
+                                                            <div
+                                                                class="d-flex justify-content-lg-end justify-content-center mt-4">
+
+                                                                <button type="button" class="modal-btn-save nextBtn"
+                                                                    id="" onclick="nextPrev(1)">continue</button>
+
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="Tab3" class="tabcontent-lead" style="min-height: 50vh;">
+                                <div class="">
+                                    <div class="row">
+                                        <div class="col-lg-5 mx-auto">
+                                            <div class="verification-div mx-auto">
+                                                <div class="verification-div--header">
+                                                    <h1>Phone Number Verification</h1>
+                                                </div>
+                                                <div class="verification-div-body">
+                                                    <form action="" id="" class="multistep-form">
+
+
+                                                        <div class="tab-step">
+                                                            <p class="mb-0 pb-0">Enter phone number to get verification
+                                                                code
+                                                            </p>
+                                                            <div class="col-lg-12 mt-3">
+                                                                <div class="form-floating mb-3">
+                                                                    <input type="text"
+                                                                        class="form-control crm-input" id="phone"
+                                                                        placeholder="Mickel">
+                                                                    <label class="crm-label form-label"
+                                                                        for="phone">Phone Number<span
+                                                                            class="text-danger"></span></label>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-step">
+                                                            <p class="mb-0 pb-0">Enter Code send to your Phone Number
+                                                            </p>
+                                                            <div class="d-flex justify-content-center mt-4">
+                                                                <input type="text" maxlength="1" class="code-input">
+                                                                <input type="text" maxlength="1" class="code-input">
+                                                                <input type="text" maxlength="1" class="code-input">
+                                                                <input type="text" maxlength="1" class="code-input">
+                                                            </div>
+                                                            <div class="d-flex justify-content-center">
+                                                                <button class="bg-transparent border-0 mt-4 pt-2 f-14 text-primary text-center">Resend</button>
+                                                               </div>
+                                                        </div>
+                                                        <div class="tab-step">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center flex-column congratulations">
+
+                                                                <img src="assets/images/happy.svg" alt="">
+                                                                <h2>Congratulations!</h2>
+                                                                <p class="mb-0 pb-0">
+                                                                    Your EPhone Number has been Verified.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+
+                                                        <div
+                                                            class="d-flex justify-content-lg-end justify-content-center mt-4">
+
+                                                            <button type="button" class="modal-btn-save nextBtn"
+                                                                id="" onclick="nextPrev(1)">continue</button>
+
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-lg-12">
+                    <div class="box">
+                        <p class="f-14 w-500 mb-0 pb-0 text-center text-gray text-dark-clr" id="copyright-year"></p>
+                    </div>
+                </div>
+            </div>
+    </main>
+        <div class="overlay"></div>
+
+    </div>
+    <!-- menu footer -->
+    <footer class="menu-footer">
+        <div class="footer-menu-link active-footer-menu">
+            <a href="index.html">
+                <i class="fa-duotone fa-grid-2"></i>
+                Dashboard
+            </a>
+        </div>
+       
+        <div class="footer-menu-link">
+            <a href="chats.html">
+                <i class="fa-duotone fa-messages"></i>
+                Chats
+            </a>
+        </div>
+        <div class="footer-menu-link">
+            <a href="services.html">
+                <i class="fa-duotone fa-chart-line-up"></i>
+                Growth
+            </a>
+        </div>
+        <div class="footer-menu-link">
+            <a href="billing.html">
+                <i class="fa-duotone fa-credit-card"></i>
+                Billing
+            </a>
+        </div>
+       
+        
+
+        <div class="footer-menu-link" id="show-more-menu">
+            <a>
+                <i class="fa-duotone fa-circle-ellipsis-vertical"></i>
+                More
+            </a>
+        </div>
+    </footer>
+    <!--show more mobile popup -->
+    <div class="menu-footer-popup">
+        <h3>More Menus</h3>
+        <div class="menu-footer-padding"></div>
+      
+        <div class="d-flex align-items-center more-footer-link">
+            <a href="support.html">
+                <div class="more-icon">
+                    <i class="fa-duotone fa-user-headset"></i>
+                </div>
+
+                Support
+            </a>
+        </div>
+        <div class="d-flex align-items-center more-footer-link">
+            <a href="log-in.html">
+                <div class="more-icon">
+                    <i class="fa-duotone fa-right-from-bracket"></i>
+                </div>
+
+                Logout
+            </a>
+        </div>
+    </div>
+
+
+
+    <div id="overlay-all" class="overlay"></div>
+
+    <div id="overlay-sidebar"></div>
+
+
+
+
+    <!-- Jquery -->
+    <script src="assets/Js/jquery.js"></script>
+    <!-- Cookies -->
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+    <!-- Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"
+        integrity="sha512-nnzkI2u2Dy6HMnzMIkh7CPd1KX445z38XIu4jG1jGw7x5tSL3VBjE44dY4ihMU1ijAQV930SPM12cCFrB18sVw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- bootstrap5 -->
+    <script src="assets/bootstrap5/js/bootstrap.min.js"></script>
+    <script src="assets/Js/app.js"></script>
+    <script src="assets/Js/layout.js"></script>
+    <!-- Resources -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Resources -->
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/map.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/geodata/worldLow.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <script src="assets/Js/charts.js"></script>
+    <script src="https://cdn.datatables.net/v/dt/dt-1.13.6/datatables.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script>
+    <script src="assets/Js/table.js"></script>
+    
+  
+    <script>
+        $(document).ready(function () {
+            // Click event for tab buttons
+            $(".tablink").click(function () {
+                var tabName = $(this).data("tab");
+
+                // Remove the "active" class from all tab buttons
+                $(".tablink").removeClass("active");
+
+                // Hide all tab content
+                $(".tabcontent-lead").hide();
+
+                // Show the selected tab content
+                $("#" + tabName).show();
+
+                // Add the "active" class to the clicked tab button
+                $(this).addClass("active");
+            });
+
+            // Trigger the default tab to open
+            $("#defaultOpen").click();
+        });
+
+    </script>
+    <script>
+        const inputs = document.querySelectorAll(".code-input");
+        const codeBlock = document.getElementById("code-block");
+        const code = document.getElementById("code");
+        const form = document.querySelector("form");
+
+        inputs.forEach((input, key) => {
+            if (key !== 0) {
+                input.addEventListener("click", function () {
+                    inputs[0].focus();
+                });
+            }
+            input.addEventListener("keyup", function () {
+                if (input.value) {
+                    if (key === 3) {
+                        // Last one tadaa
+                        const userCode = [...inputs].map((input) => input.value).join("");
+                        codeBlock.classList.remove("hidden");
+                        code.innerText = userCode;
+                    } else {
+                        inputs[key + 1].focus();
+                    }
+                }
+            });
+        });
+
+        const reset = () => {
+            form.reset();
+            codeBlock.classList.add("hidden");
+            code.innerText = "";
+        };
+
+    </script>
+ 
+    <script>
+   $(document).ready(function() {
+    $(".multistep-form").each(function() {
+        var currentTab = 0;
+        var form = $(this);
+        var tabSteps = form.find(".tab-step");
+        var nextBtn = form.find(".nextBtn");
+
+        showTab(currentTab);
+
+        function showTab(n) {
+            tabSteps.hide();
+            tabSteps.eq(n).show();
+
+            if (n == tabSteps.length - 1) {
+                nextBtn.hide();
+                nextBtn.text("Submit");
+            } else {
+                nextBtn.show();
+                nextBtn.text("Next");
+            }
+        }
+
+        nextBtn.click(function() {
+            tabSteps.eq(currentTab).hide();
+            currentTab = currentTab + 1;
+            if (currentTab >= tabSteps.length) {
+                form.submit();
+                return false;
+            }
+            showTab(currentTab);
+        });
+    });
+});
+  
+  
+      </script>
+</body>
+
+</html>
