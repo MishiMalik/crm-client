@@ -83,7 +83,7 @@
 
                         <ul>
                             <li class="menu-item">
-                                <a href="index.html" class="active-menu">
+                                <a href="index.html" >
                                     <span class="menu-icon">
                                         <i class="fa-duotone fa-grid-2"></i>
                                     </span>
@@ -123,7 +123,7 @@
                             </li>
 
                             <li class="menu-item">
-                                <a href="support.html">
+                                <a href="support.html" class="active-menu">
                                     <span class="menu-icon">
                                         <i class="fa-duotone fa-user-headset"></i>
 
@@ -621,287 +621,100 @@
                     <div class="col-xl-12 ">
                         <div class="row">
 
-                            <div class="col-xl-3 col-md-6 mb-3">
-                                <div class="box">
-                                    <h1 class="box-heading">Total Tickets</h1>
-                                    <div class="d-flex align-items-center">
-                                        <div class=" flex-grow-1  box-text d-flex align-items-center">
-
-                                            <span class="box-value">234+</span>
-
-                                        </div>
-                                        <div class="box-icon blue-icon">
-                                            <i class="fa-solid fa-ticket"></i>
-                                        </div>
-
-                                    </div>
-                                </div>
+                            <div class="col-12 ">
+                                <h1 class="heading-ticket">
+                                    My Support Tickets
+                                </h1>
                             </div>
-                            <div class="col-xl-3 col-md-6 mb-3">
-                                <div class="box">
-                                    <h1 class="box-heading">Completed Tickets</h1>
-                                    <div class="d-flex align-items-center">
-                                        <div class=" flex-grow-1  box-text d-flex align-items-center">
-
-                                            <span class="box-value">32</span>
-
-                                        </div>
-                                        <div class="box-icon yellow-icon">
-                                            <i class="fa-solid fa-message-lines"></i>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-md-6 mb-3">
-                                <div class="box">
-                                    <h1 class="box-heading">Awaiting Client Response</h1>
-                                    <div class="d-flex align-items-center">
-                                        <div class=" flex-grow-1  box-text d-flex align-items-center">
-                                            <span class="box-value">143</span>
-
-                                        </div>
-                                        <div class="box-icon green-icon">
-                                            <i class="fa-solid fa-thumbs-up"></i>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-md-6 mb-3">
-                                <div class="box">
-                                    <h1 class="box-heading">Customer Replied</h1>
-                                    <div class="d-flex align-items-center">
-                                        <div class=" flex-grow-1  box-text d-flex align-items-center">
-                                            <span class="box-value">143</span>
-
-                                        </div>
-                                        <div class="box-icon red-icon">
-                                            <i class="fa-solid fa-message-check"></i>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-6 col-md-6 mb-3">
-                                <div class="box">
-                                    <h1 class="box-heading">Ticket by Priority</h1>
-                                    <div class="d-flex align-items-center">
-                                        <div id="chartdiv2"></div>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-6 col-md-6 mb-3">
-                                <div class="box">
-                                    <h1 class="box-heading">Tickets share per category</h1>
-                                    <div class="d-flex align-items-center">
-                                        <div id="chartdiv3"></div>
-
-                                    </div>
-                                </div>
-                            </div>
-
+                          
                             <div class="col-lg-12 h-100">
                                 <div class="box mb-3 box-p">
                                     <div class="flex-grow-1">
                                         <div class="d-flex align-items-center justify-content-between mb-3">
-                                            <h1 class="f-20 w-500 mb-0 pb-0 text-dark-clr">Support Ticket List</h1>
+                                            <h1 class="f-20 w-500 mb-0 pb-0 text-dark-clr">All Tickets</h1>
+                                            <a href="open-ticket.html" class="table-btn" > <i class="bi bi-plus-circle me-1"></i> Open New Ticket</a>
                                         </div>
 
                                         <div class="tabcontent-lead">
 
-                                            <table id="example" class="table data-table-style ">
+                                            <table id="ticket" class="table data-table-style ">
                                                 <thead>
                                                     <tr>
                                                         <th class="no-sort"></th>
-                                                        <th>ID</th>
-                                                        <th>Customer Email</th>
                                                         <th>Subject</th>
+                                                        <th>Department</th>
+                                                        <th>Last Updated</th>
                                                         <th>Status</th>
-                                                        <th>Priority</th>
-                                                        <th>Last Update Date</th>
-                                                        <th>Opened Date</th>
                                                         <th>Actions</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
                                                     <tr class="">
-                                                        <td>
-                                                            <div class="d-flex align-items-center">
-                                                                <div class="table-arrow">
-                                                                    <!-- <i class="fa-duotone fa-circle-chevron-down"></i> -->
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                        <td>1</td>
-                                                        <td>Jhondoe@gmail.com</td>
-
+                                                    <td></td>
                                                         <td>
                                                             <p onclick="changeURL()" href="ticket-detail.html"
                                                                 class="subject mb-0 pb-0">Facing Issue in Login Lorem
                                                                 ipsum, dolor sit amet consectetur adipisicing elit. </p>
                                                         </td>
+                                                        <td>Website Down</td>
+                                                        <td>13, Oct 2023</td>
                                                         <td>
                                                             <div class="ticket-open">Open</div>
                                                         </td>
 
-                                                        <td>
-                                                            <div class="priority-high">High</div>
-                                                        </td>
-
-                                                        <td>
-                                                            13/9/2034
-                                                        </td>
-
-                                                        <td>
-                                                            13/9/2034
-                                                        </td>
-
 
                                                         <td>
                                                             <div class="table-actions d-flex align-items-center">
                                                                 <a href="ticket-detail.html" class="edit"><i
                                                                         class="fa-solid fa-eye me-2"></i>View</a>
-                                                                <button class="delete"><i
-                                                                        class="fa-solid fa-trash me-2"></i>
-                                                                    Delete</button>
                                                             </div>
 
 
                                                         </td>
                                                     </tr>
                                                     <tr class="">
-                                                        <td>
-                                                            <div class="d-flex align-items-center">
-                                                                <div class="table-arrow">
-                                                                    <!-- <i class="fa-duotone fa-circle-chevron-down"></i> -->
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                        <td>2</td>
-                                                        <td>Jhondoe@gmail.com</td>
-
+                                                    <td></td>
                                                         <td>
                                                             <p onclick="changeURL()" href="ticket-detail.html"
                                                                 class="subject mb-0 pb-0">Facing Issue in Login Lorem
                                                                 ipsum, dolor sit amet consectetur adipisicing elit. </p>
                                                         </td>
+                                                        <td>Website Down</td>
+                                                        <td>13, Oct 2023</td>
                                                         <td>
-                                                            <div class="ticket-waiting">Awaiting Client Response</div>
+                                                            <div class="ticket-open">Open</div>
                                                         </td>
 
-                                                        <td>
-                                                            <div class="priority-medium">Medium</div>
-                                                        </td>
-
-                                                        <td>
-                                                            13/9/2034
-                                                        </td>
-
-                                                        <td>
-                                                            13/9/2034
-                                                        </td>
 
 
                                                         <td>
                                                             <div class="table-actions d-flex align-items-center">
                                                                 <a href="ticket-detail.html" class="edit"><i
                                                                         class="fa-solid fa-eye me-2"></i>View</a>
-                                                                <button class="delete"><i
-                                                                        class="fa-solid fa-trash me-2"></i>
-                                                                    Delete</button>
-                                                            </div>
-
-
-                                                        </td>
-                                                    </tr>
-
-                                                    <tr class="">
-                                                        <td>
-                                                            <div class="d-flex align-items-center">
-                                                                <div class="table-arrow">
-                                                                    <!-- <i class="fa-duotone fa-circle-chevron-down"></i> -->
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                        <td>3</td>
-                                                        <td>Jhondoe@gmail.com</td>
-
-                                                        <td>
-                                                            <p onclick="changeURL()" href="ticket-detail.html"
-                                                                class="subject mb-0 pb-0">Facing Issue in Login Lorem
-                                                                ipsum, dolor sit amet consectetur adipisicing elit. </p>
-                                                        </td>
-                                                        <td>
-                                                            <div class="ticket-replied">Customer Replied</div>
-                                                        </td>
-
-                                                        <td>
-                                                            <div class="priority-low">Low</div>
-                                                        </td>
-
-                                                        <td>
-                                                            13/9/2034
-                                                        </td>
-
-                                                        <td>
-                                                            13/9/2034
-                                                        </td>
-
-
-                                                        <td>
-                                                            <div class="table-actions d-flex align-items-center">
-                                                                <a href="ticket-detail.html" class="edit"><i
-                                                                        class="fa-solid fa-eye me-2"></i>View</a>
-                                                                <button class="delete"><i
-                                                                        class="fa-solid fa-trash me-2"></i>
-                                                                    Delete</button>
                                                             </div>
 
 
                                                         </td>
                                                     </tr>
                                                     <tr class="">
-                                                        <td>
-                                                            <div class="d-flex align-items-center">
-                                                                <div class="table-arrow">
-                                                                    <!-- <i class="fa-duotone fa-circle-chevron-down"></i> -->
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                        <td>4</td>
-                                                        <td>Jhondoe@gmail.com</td>
-
+                                                    <td></td>
                                                         <td>
                                                             <p onclick="changeURL()" href="ticket-detail.html"
                                                                 class="subject mb-0 pb-0">Facing Issue in Login Lorem
                                                                 ipsum, dolor sit amet consectetur adipisicing elit. </p>
                                                         </td>
+                                                        <td>Website Down</td>
+                                                        <td>13, Oct 2023</td>
                                                         <td>
-                                                            <div class="ticket-completed">Completed</div>
+                                                            <div class="ticket-open">Open</div>
                                                         </td>
 
-                                                        <td>
-                                                            <div class="priority-low">Low</div>
-                                                        </td>
-
-                                                        <td>
-                                                            13/9/2034
-                                                        </td>
-
-                                                        <td>
-                                                            13/9/2034
-                                                        </td>
 
 
                                                         <td>
                                                             <div class="table-actions d-flex align-items-center">
                                                                 <a href="ticket-detail.html" class="edit"><i
                                                                         class="fa-solid fa-eye me-2"></i>View</a>
-                                                                <button class="delete"><i
-                                                                        class="fa-solid fa-trash me-2"></i>
-                                                                    Delete</button>
                                                             </div>
 
 
@@ -935,7 +748,7 @@
     </div>
   <!-- menu footer -->
   <footer class="menu-footer">
-    <div class="footer-menu-link active-footer-menu">
+    <div class="footer-menu-link ">
         <a href="index.html">
             <i class="fa-duotone fa-grid-2"></i>
             Dashboard
@@ -975,7 +788,7 @@
     <h3>More Menus</h3>
     <div class="menu-footer-padding"></div>
   
-    <div class="d-flex align-items-center more-footer-link">
+    <div class="d-flex align-items-center more-footer-link active-footer-menu">
         <a href="support.html">
             <div class="more-icon">
                 <i class="fa-duotone fa-user-headset"></i>

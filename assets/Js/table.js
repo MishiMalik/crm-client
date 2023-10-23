@@ -41,7 +41,12 @@ const upcomingCancelled = $("#example-cancelled").DataTable({
   paging: false,
   info: false,
 });
-
+const ticket = $("#ticket").DataTable({
+  responsive: true,
+  language: {
+    searchPlaceholder: "Search Ticket",
+  },
+});
 // // Formatting function for row details - modify as you need
 // function format(d) {
 //     // `d` is the original data object for the row
