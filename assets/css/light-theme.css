@@ -3444,6 +3444,16 @@ span.plus {
 .ticket-info-icon {
   background-color: white !important; }
 
+.hover-ticket:hover {
+  border: 2px solid #0963ce; }
+
+.hover-ticket {
+  border: 2px solid white;
+  cursor: pointer; }
+
+.selected-ticket-type {
+  border: 2px solid #0963ce !important; }
+
 /* Style for .selectBox (Dropdown container) */
 .multipleSelection {
   position: relative; }

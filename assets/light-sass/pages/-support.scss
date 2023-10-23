@@ -509,3 +509,14 @@ span.plus {
 .ticket-info-icon{
   background-color: white !important;
 }
+
+.hover-ticket:hover{
+  border: 2px solid $secondry;
+}
+.hover-ticket{
+  border: 2px solid white;
+  cursor: pointer;
+}
+.selected-ticket-type{
+  border: 2px solid $secondry !important;
+}
