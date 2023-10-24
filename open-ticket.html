@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="https://unpkg.com/css-pro-layout@1.1.0/dist/css/css-pro-layout.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/v/dt/dt-1.13.6/datatables.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.dataTables.min.css">
+    <link rel="stylesheet" href="https://rawgit.com/enyo/dropzone/master/dist/dropzone.css" />
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/layout.css">
     <link rel="stylesheet" id="theme-link" href="assets/css/light-theme.css">
@@ -622,10 +623,11 @@
                         <div class="row">
 
                             <div class="col-xl-4 col-md-6 mb-3">
-                                <div class="box selected-ticket-type hover-ticket">
+                                <div class="box selected-ticket-type hover-ticket position-relative">
+                                    <input type="radio" name="ticket-type" id="" class="box-radio" checked>
                                     <div class="d-flex align-items-center">
                                         <div class=" flex-grow-1  box-text d-flex align-items-center">
-                                            <h1 class="w-600 f-16 mb-0 pb-0">General Request</h1>
+                                            <h1 class="w-600 f-16 mb-0 pb-0 box-heading">General </h1>
                                         </div>
                                         <div class="box-icon blue-icon">
                                             <i class="fa-solid fa-ticket"></i>
@@ -635,11 +637,12 @@
                                 </div>
                             </div>
                             <div class="col-xl-4 col-md-6 mb-3">
-                                <div class="box hover-ticket">
+                                <div class="box hover-ticket position-relative">
+                                    <input type="radio" name="ticket-type" id="" class="box-radio">
                                     <div class="d-flex align-items-center">
                                         <div class=" flex-grow-1  box-text d-flex align-items-center">
 
-                                            <h1 class="w-600 f-16 mb-0 pb-0">Sales/Billings</h1>
+                                            <h1 class="w-600 f-16 mb-0 pb-0 box-heading">Sales/Billings</h1>
 
                                         </div>
                                         <div class="box-icon yellow-icon">
@@ -650,10 +653,11 @@
                                 </div>
                             </div>
                             <div class="col-xl-4 col-md-6 mb-3">
-                                <div class="box hover-ticket">
+                                <div class="box hover-ticket position-relative">
+                                    <input type="radio" name="ticket-type" id="" class="box-radio">
                                     <div class="d-flex align-items-center">
                                         <div class=" flex-grow-1  box-text d-flex align-items-center">
-                                            <h1 class="w-600 f-16 mb-0 pb-0">Technical</h1>
+                                            <h1 class="w-600 f-16 mb-0 pb-0 box-heading">Technical</h1>
                                         </div>
                                         <div class="box-icon green-icon">
                                             <i class="fa-solid fa-laptop-mobile"></i>
@@ -666,211 +670,72 @@
                             <div class="col-lg-12 h-100">
                                 <div class="box mb-3 box-p">
                                     <div class="flex-grow-1">
-                                        <div class="d-flex align-items-center justify-content-between mb-3">
-                                            <h1 class="f-20 w-500 mb-0 pb-0 text-dark-clr">Support Ticket List</h1>
+                                        <div class=" mb-3">
+                                            <h1 class="f-20 w-500 mb-0 pb-0 text-dark-clr "><span class="selected-heading">General</span> Requests</h1>
+                                            <p class="f-14 w-400 text mt-2" style="color: #b3b2b4;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime recusandae nulla harum cumque id atque ex, blanditiis earum dolorum voluptates.</p>
                                         </div>
-
-                                        <div class="tabcontent-lead">
-
-                                            <table id="example" class="table data-table-style ">
-                                                <thead>
-                                                    <tr>
-                                                        <th class="no-sort"></th>
-                                                        <th>ID</th>
-                                                        <th>Customer Email</th>
-                                                        <th>Subject</th>
-                                                        <th>Status</th>
-                                                        <th>Priority</th>
-                                                        <th>Last Update Date</th>
-                                                        <th>Opened Date</th>
-                                                        <th>Actions</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr class="">
-                                                        <td>
-                                                            <div class="d-flex align-items-center">
-                                                                <div class="table-arrow">
-                                                                    <!-- <i class="fa-duotone fa-circle-chevron-down"></i> -->
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                        <td>1</td>
-                                                        <td>Jhondoe@gmail.com</td>
-
-                                                        <td>
-                                                            <p onclick="changeURL()" href="ticket-detail.html"
-                                                                class="subject mb-0 pb-0">Facing Issue in Login Lorem
-                                                                ipsum, dolor sit amet consectetur adipisicing elit. </p>
-                                                        </td>
-                                                        <td>
-                                                            <div class="ticket-open">Open</div>
-                                                        </td>
-
-                                                        <td>
-                                                            <div class="priority-high">High</div>
-                                                        </td>
-
-                                                        <td>
-                                                            13/9/2034
-                                                        </td>
-
-                                                        <td>
-                                                            13/9/2034
-                                                        </td>
-
-
-                                                        <td>
-                                                            <div class="table-actions d-flex align-items-center">
-                                                                <a href="ticket-detail.html" class="edit"><i
-                                                                        class="fa-solid fa-eye me-2"></i>View</a>
-                                                                <button class="delete"><i
-                                                                        class="fa-solid fa-trash me-2"></i>
-                                                                    Delete</button>
-                                                            </div>
-
-
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="">
-                                                        <td>
-                                                            <div class="d-flex align-items-center">
-                                                                <div class="table-arrow">
-                                                                    <!-- <i class="fa-duotone fa-circle-chevron-down"></i> -->
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                        <td>2</td>
-                                                        <td>Jhondoe@gmail.com</td>
-
-                                                        <td>
-                                                            <p onclick="changeURL()" href="ticket-detail.html"
-                                                                class="subject mb-0 pb-0">Facing Issue in Login Lorem
-                                                                ipsum, dolor sit amet consectetur adipisicing elit. </p>
-                                                        </td>
-                                                        <td>
-                                                            <div class="ticket-waiting">Awaiting Client Response</div>
-                                                        </td>
-
-                                                        <td>
-                                                            <div class="priority-medium">Medium</div>
-                                                        </td>
-
-                                                        <td>
-                                                            13/9/2034
-                                                        </td>
-
-                                                        <td>
-                                                            13/9/2034
-                                                        </td>
-
-
-                                                        <td>
-                                                            <div class="table-actions d-flex align-items-center">
-                                                                <a href="ticket-detail.html" class="edit"><i
-                                                                        class="fa-solid fa-eye me-2"></i>View</a>
-                                                                <button class="delete"><i
-                                                                        class="fa-solid fa-trash me-2"></i>
-                                                                    Delete</button>
-                                                            </div>
-
-
-                                                        </td>
-                                                    </tr>
-
-                                                    <tr class="">
-                                                        <td>
-                                                            <div class="d-flex align-items-center">
-                                                                <div class="table-arrow">
-                                                                    <!-- <i class="fa-duotone fa-circle-chevron-down"></i> -->
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                        <td>3</td>
-                                                        <td>Jhondoe@gmail.com</td>
-
-                                                        <td>
-                                                            <p onclick="changeURL()" href="ticket-detail.html"
-                                                                class="subject mb-0 pb-0">Facing Issue in Login Lorem
-                                                                ipsum, dolor sit amet consectetur adipisicing elit. </p>
-                                                        </td>
-                                                        <td>
-                                                            <div class="ticket-replied">Customer Replied</div>
-                                                        </td>
-
-                                                        <td>
-                                                            <div class="priority-low">Low</div>
-                                                        </td>
-
-                                                        <td>
-                                                            13/9/2034
-                                                        </td>
-
-                                                        <td>
-                                                            13/9/2034
-                                                        </td>
-
-
-                                                        <td>
-                                                            <div class="table-actions d-flex align-items-center">
-                                                                <a href="ticket-detail.html" class="edit"><i
-                                                                        class="fa-solid fa-eye me-2"></i>View</a>
-                                                                <button class="delete"><i
-                                                                        class="fa-solid fa-trash me-2"></i>
-                                                                    Delete</button>
-                                                            </div>
-
-
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="">
-                                                        <td>
-                                                            <div class="d-flex align-items-center">
-                                                                <div class="table-arrow">
-                                                                    <!-- <i class="fa-duotone fa-circle-chevron-down"></i> -->
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                        <td>4</td>
-                                                        <td>Jhondoe@gmail.com</td>
-
-                                                        <td>
-                                                            <p onclick="changeURL()" href="ticket-detail.html"
-                                                                class="subject mb-0 pb-0">Facing Issue in Login Lorem
-                                                                ipsum, dolor sit amet consectetur adipisicing elit. </p>
-                                                        </td>
-                                                        <td>
-                                                            <div class="ticket-completed">Completed</div>
-                                                        </td>
-
-                                                        <td>
-                                                            <div class="priority-low">Low</div>
-                                                        </td>
-
-                                                        <td>
-                                                            13/9/2034
-                                                        </td>
-
-                                                        <td>
-                                                            13/9/2034
-                                                        </td>
-
-
-                                                        <td>
-                                                            <div class="table-actions d-flex align-items-center">
-                                                                <a href="ticket-detail.html" class="edit"><i
-                                                                        class="fa-solid fa-eye me-2"></i>View</a>
-                                                                <button class="delete"><i
-                                                                        class="fa-solid fa-trash me-2"></i>
-                                                                    Delete</button>
-                                                            </div>
-
-
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                     <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="form-floating mb-3">
+                                                <input type="text" class="form-control crm-input" id="subject"
+                                                    placeholder="Mickel">
+                                                <label class="crm-label form-label" for="subject">Subject<span
+                                                        class="text-danger">*</span></label>
+                                            </div>
                                         </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-floating">
+                                                <select class="form-select crm-input" id="select-status"
+                                                    aria-label="Floating label select example">
+                                                    <option>Select </option>
+                                                    <option value="high" >High
+                                                    </option>
+                                                    <option value="medium">
+                                                        Medium</option>
+                                                    <option value="low">Low
+                                                    </option>
+                                                    
+                                                </select>
+                                                <label class="crm-label form-label" for="select-status">Priority<span
+                                                        class="text-danger">*</span></label>
+                                            </div>
+                                        </div>
+                                         <div class="col-lg-12 mt-4 ">
+                                            <label class="crm-label form-label px-lg-3 px-2" for="select-status">Description</label>
+                                            <textarea name="" id="" rows="3" class="px-lg-3 crm-input"
+                                                style="width: 100%; outline: none;">
+                                            </textarea>
+                                         </div>
+                                         <div class="col-lg-12">
+                                            <button class="upload-attchment attachment-btn mt-2 d-block">
+                                                <i class="bi bi-plus-circle-fill"></i>
+                                                Click to Upload
+                                                Attachment</button>
+                                            <div class="upload-area mt-4 ">
+                                                <p class="f-14 w-600 text-dark-clr ">Upload Attachments <span
+                                                        class="text-gray f-12">(Optional)</span></p>
+                                                <div id="dropzone">
+                                                    <form method="post" action="/upload" class="dropzone needsclick"
+                                                        id="demo-upload">
+                                                        <div class="dz-message needsclick">
+                                                            <span class="text text-dark-clr">
+        
+                                                                Drop files here or click to upload.
+                                                            </span>
+                                                            <span class="plus">+</span>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                         <div class="col-lg-12">
+                                            <div class="d-flex justify-content-end mt-4 mb-3">
+                                                <button class="modal-btn-cancel me-3">Cancel</button>
+                                                <button class="modal-btn-save">Submit</button>
+                                            </div>
+                                         </div>
+                                        <!-- <h1 class="f-20 w-500 mb-0 pb-0 text-dark-clr">This is Our General Technical Support queu/category</h1> -->
+                                     </div>
 
                                     </div>
 
@@ -1093,6 +958,7 @@
                                                 class="text-danger">*</span></label>
                                     </div>
                                 </div>
+                         
                                 <div class="col-lg-12">
                                     <div class="d-flex justify-content-lg-end justify-content-center mt-3 mb-3">
                                         <button type="button" class="modal-btn-cancel me-3"
@@ -1125,6 +991,7 @@
 
     <script src="https://cdn.datatables.net/v/dt/dt-1.13.6/datatables.min.js"></script>
     <script src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script>
+    <script src="https://rawgit.com/enyo/dropzone/master/dist/dropzone.js"></script>
     <script src="assets/Js/table.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
@@ -1376,24 +1243,59 @@
             window.location.href = 'ticket-detail.html'; // Replace with the desired URL
         }
     </script>
-   
    <script>
- document.addEventListener("DOMContentLoaded", function () {
-        const boxes = document.querySelectorAll(".hover-ticket");
+   document.addEventListener("DOMContentLoaded", function () {
+    const boxes = document.querySelectorAll(".hover-ticket");
+    const radioInputs = document.querySelectorAll(".box-radio");
+    const h2Element = document.querySelector(".selected-heading");
 
-        boxes.forEach(box => {
-            box.addEventListener("click", function () {
-                // Remove the class from all boxes
-                boxes.forEach(b => {
-                    b.classList.remove("selected-ticket-type");
-                });
-
-                // Add the class to the clicked box
-                this.classList.add("selected-ticket-type");
+    boxes.forEach((box, index) => {
+        box.addEventListener("click", function () {
+            // Remove the class from all boxes
+            boxes.forEach(b => {
+                b.classList.remove("selected-ticket-type");
             });
+
+            // Add the class to the clicked box
+            this.classList.add("selected-ticket-type");
+
+            // Check the corresponding radio input
+            radioInputs[index].checked = true;
+
+            // Get the text from the h1 element
+            const h1Text = this.querySelector(".box-text h1").textContent;
+
+            // Update the content of the h2 element
+            h2Element.textContent = h1Text;
         });
     });
-   </script>
+});
+</script>
+
+
+
+      <script>
+        // Wait for the document to be fully loaded
+        document.addEventListener("DOMContentLoaded", function () {
+         
+           
+
+            var attachmentBtn = document.querySelector(".attachment-btn");
+            var attchmentArea = document.querySelector(".upload-area");
+
+            attachmentBtn.addEventListener("click", function () {
+
+                if (attchmentArea.style.display === "none" || attchmentArea.style.display === "") {
+                    attchmentArea.style.display = "block";
+                    this.style.display = " none"
+                }
+            })
+        });
+
+
+
+  </script>
+     
 </body>
 
 </html>

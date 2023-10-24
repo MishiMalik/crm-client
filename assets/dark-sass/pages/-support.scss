@@ -456,6 +456,9 @@ span.plus {
   transition: 0.2s;
   text-align: center;
   line-height: 120px;
+  @media only screen and (max-width:767px){
+    display: none !important;
+  }
   span.text {
     display: none;
   }

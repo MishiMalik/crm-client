@@ -3493,6 +3493,9 @@ span.plus {
   transition: 0.2s;
   text-align: center;
   line-height: 120px; }
+  @media only screen and (max-width: 767px) {
+    .dropzone.dz-started .dz-message {
+      display: none !important; } }
   .dropzone.dz-started .dz-message span.text {
     display: none; }
   .dropzone.dz-started .dz-message span.plus {
