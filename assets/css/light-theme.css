@@ -1235,6 +1235,14 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
 .tab-tabcontent {
   display: none; }
 
+.tab .tab-btn {
+  background-color: #0963ce !important;
+  padding: 7px 10px !important;
+  border-radius: 4px !important;
+  font-size: 14px !important;
+  color: white !important;
+  font-weight: 500 !important; }
+
 .person-card {
   position: relative;
   width: 100%;
@@ -3461,6 +3469,15 @@ span.plus {
   position: absolute;
   top: 10px;
   left: 10px; }
+
+.tab-card {
+  height: 60px; }
+  @media only screen and (max-width: 600px) {
+    .tab-card {
+      height: 40px; } }
+
+.tab-card2 {
+  height: 50px; }
 
 /* Style for .selectBox (Dropdown container) */
 .multipleSelection {

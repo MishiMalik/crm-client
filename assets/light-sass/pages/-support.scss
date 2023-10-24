@@ -528,3 +528,12 @@ span.plus {
   top: 10px;
   left: 10px;
 }
+.tab-card{
+  height: 60px;
+  @media only screen and (max-width:600px){
+    height: 40px;
+  }
+}
+.tab-card2{
+  height: 50px;
+}
