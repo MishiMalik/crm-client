@@ -516,3 +516,47 @@ span.plus {
 // .ticket-info-icon{
 //   background-color: $white-light !important;
 // }
+
+// .fixed {
+//   position: fixed;
+//   top: 0;
+// }
+.ticket-info-div {
+  position: sticky;
+  top: 100px;
+  @media only screen and (max-width: 991px) {
+    position: relative;
+    top: 0;
+  }
+}
+.ticket-info-icon{
+  background-color: white !important;
+}
+
+.hover-ticket:hover{
+  border: 1px solid $secondry;
+}
+.hover-ticket{
+  border: 1px solid #5C607B;
+  cursor: pointer;
+}
+.selected-ticket-type{
+  border: 1px solid $secondry !important;
+}
+.box-radio{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.tab-card{
+  height: 60px;
+  @media only screen and (max-width:600px){
+    height: 40px;
+  }
+}
+.tab-card2{
+  height: 50px;
+}
+.card-heading{
+  color: white !important;
+}

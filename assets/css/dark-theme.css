@@ -1295,6 +1295,14 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
 .tab-tabcontent {
   display: none; }
 
+.tab .tab-btn {
+  background-color: #0963ce !important;
+  padding: 7px 10px !important;
+  border-radius: 4px !important;
+  font-size: 14px !important;
+  color: white !important;
+  font-weight: 500 !important; }
+
 .person-card {
   position: relative;
   width: 100%;
@@ -3540,6 +3548,44 @@ span.plus {
     .ticket-info-div {
       position: relative;
       top: 0; } }
+
+.ticket-info-div {
+  position: sticky;
+  top: 100px; }
+  @media only screen and (max-width: 991px) {
+    .ticket-info-div {
+      position: relative;
+      top: 0; } }
+
+.ticket-info-icon {
+  background-color: white !important; }
+
+.hover-ticket:hover {
+  border: 1px solid #0963ce; }
+
+.hover-ticket {
+  border: 1px solid #5C607B;
+  cursor: pointer; }
+
+.selected-ticket-type {
+  border: 1px solid #0963ce !important; }
+
+.box-radio {
+  position: absolute;
+  top: 10px;
+  left: 10px; }
+
+.tab-card {
+  height: 60px; }
+  @media only screen and (max-width: 600px) {
+    .tab-card {
+      height: 40px; } }
+
+.tab-card2 {
+  height: 50px; }
+
+.card-heading {
+  color: white !important; }
 
 /* Style for .selectBox (Dropdown container) */
 .multipleSelection {
