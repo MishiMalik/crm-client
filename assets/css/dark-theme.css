@@ -4386,17 +4386,24 @@ span.plus {
       margin-top: 20px; }
 
 .progress-c {
-  width: 200px;
-  height: 200px;
-  font-size: 30px;
-  color: #fff;
+  width: 48px;
+  height: 48px;
+  font-size: 14px;
+  color: white;
   border-radius: 50%;
   overflow: hidden;
   position: relative;
-  background: #07070c;
+  background: transparent;
   text-align: center;
-  line-height: 200px;
-  margin: 20px; }
+  line-height: 48px;
+  margin: 8px; }
+  @media only screen and (max-width: 580px) {
+    .progress-c {
+      width: 35px;
+      height: 35px;
+      line-height: 35px;
+      font-size: 10px !important;
+      margin: 13px 0px !important; } }
 
 .progress-c::after {
   content: "%"; }
@@ -4412,7 +4419,7 @@ span.plus {
   top: 0;
   left: 0;
   z-index: 1;
-  background-color: #07070c; }
+  background-color: transparent; }
 
 .progress-c .left, .progress-c .right {
   width: 50%;
@@ -4420,7 +4427,7 @@ span.plus {
   position: absolute;
   top: 0;
   left: 0;
-  border: 10px solid #222235;
+  border: 3px solid #0963ce;
   border-radius: 100px 0px 0px 100px;
   border-right: 0;
   transform-origin: right; }
