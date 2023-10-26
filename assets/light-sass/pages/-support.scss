@@ -537,3 +537,23 @@ span.plus {
 .tab-card2{
   height: 50px;
 }
+.remove-card{
+  background-color: $light-gray;
+  padding: 6px 10px;
+  p{
+    font-size: 14px;
+    font-weight: 500;
+  }
+  button{
+    background-color: transparent;
+    border: none;
+    i{
+    color: red;
+  
+  }
+}
+&:hover{
+  background-color: rgba($secondry, .3);
+  color: white;
+}
+}

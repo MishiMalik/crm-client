@@ -560,3 +560,24 @@ span.plus {
 .card-heading{
   color: white !important;
 }
+.remove-card{
+  background-color: $dark-skin;
+  padding: 6px 10px;
+  p{
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+  }
+  button{
+    background-color: transparent;
+    border: none;
+    i{
+    color: red;
+  
+  }
+}
+&:hover{
+  background-color: rgba($secondry, .3);
+  color: white;
+}
+}
