@@ -1226,7 +1226,7 @@
     <script>
         $(document).ready(function () {
             // Define the screen width breakpoint where you want to disable the accordion
-            var breakpoint = 768; // For example, disable the accordion on screens wider than 992px
+            var breakpoint = 320; // For example, disable the accordion on screens wider than 992px
 
             // Function to disable accordion behavior on large screens
             function disableAccordionOnLargeScreens() {
@@ -1238,14 +1238,7 @@
                     $('.accordion .accordion-button').attr('aria-expanded', 'true');
                     $('.accordion .accordion-collapse').addClass('show');
                 }
-                // else {
-                //     // Restore data-bs-toggle and data-bs-target attributes if the screen width is within the breakpoint
-                //     $('.accordion .accordion-button')
-                //         .attr('data-bs-toggle', 'collapse')
-                //         .attr('data-bs-target', '.accordion-collapse');
-                //     $('.accordion .accordion-button:first').attr('aria-expanded', 'true');
-                //     $('.accordion .accordion-collapse:first').addClass('show');
-                // }
+             
             }
 
             // Call the function on page load and resize events
